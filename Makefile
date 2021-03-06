@@ -1,4 +1,4 @@
-PREFIX	?= $(HOME)
+PREFIX	?= /usr/local
 DESTDIR	?= /
 PYTHON	?= python
 
