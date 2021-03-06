@@ -12,10 +12,9 @@ DOC_PDF += $(patsubst %,%.pdf,$(ARTICLES) $(SP_ARTICLES))
 DOC_MAN1=$(patsubst %.txt,%.1,$(MAN1_TXT))
 DOC_MAN7=$(patsubst %.txt,%.7,$(MAN7_TXT))
 
-prefix?=$(HOME)/man
-mandir?=$(prefix)
+PREFIX ?= /usr/local
+mandir?=$(PREFIX)/share/man
 man1dir=$(mandir)/man1
-# DESTDIR=
 
 ASCIIDOC=asciidoc --unsafe
 ASCIIDOC_EXTRA =
